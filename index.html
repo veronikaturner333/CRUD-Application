@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-white">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>🏋️‍♀️ Exercise Plan 💪</strong></h1>
+        </div>
+        <!--Create input forms for excercises, reps, and sets-->
+        <div class="main row justify-content-center">
+            <form action="" id="exercise-plan" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="exerciseName">Exercise</label>
+                    <input class="form-control" id="exerciseName" type="text" placeholder="Enter Exercise Name">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="reps">Reps</label>
+                    <input class="form-control" id="reps" type="text" placeholder="Enter Reps">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="sets">Sets</label>
+                    <input class="form-control" id="sets" type="text" placeholder="Enter Sets">
+                </div>
+                <!--Submission Button-->
+                <div class="col-10 col-md-8">
+                    <input class="btn btn-success add-btn" type="submit" value="submit">
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-5">
+                <!--Header titles for table data-->
+                <table class="table table-striped table-light">
+                    <thead>
+                        <tr>
+                            <th>Exercise</th>
+                            <th>Reps</th>
+                            <th>Sets</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="exercise-list">
+                        <tr>
+                            <td>Bench Press</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>
+                                <!--Button for deleting row-->
+                                <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
