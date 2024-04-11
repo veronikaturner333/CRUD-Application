@@ -29,7 +29,7 @@ function clearFields(){
 document.querySelector("#exercise-plan").addEventListener("submit", (e) => {
     //preventDefault prevents default behavior such as refreshing the page after submission
     e.preventDefault();
-    //Get Form Values
+    //Set form variables we get from form value ids
     const exerciseName = document.querySelector("#exerciseName").value;
     const reps = document.querySelector("#reps").value;
     const sets = document.querySelector("#sets").value;
